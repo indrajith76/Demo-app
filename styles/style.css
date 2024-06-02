@@ -26,6 +26,19 @@ body {
   font-size: 12px;
 }
 
+.text-slider {
+  text-align: center;
+  background: #ee99ff;
+  width: 100%;
+  margin: 10px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px !important;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
 .logo-banner-wrapper {
   position: relative;
   text-align: center;
