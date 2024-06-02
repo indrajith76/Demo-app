@@ -66,6 +66,7 @@ body {
 }
 .card-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 10px;
   margin: 20px 0;
