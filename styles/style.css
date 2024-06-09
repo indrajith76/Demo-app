@@ -102,6 +102,7 @@ marquee {
 .banner-image {
   width: 100%;
   height: auto;
+  border: 1px solid #2eff00;
   border-radius: 10px;
 }
 .card-container {
@@ -163,17 +164,16 @@ marquee {
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
+  gap: 5px;
 }
 
 .custom-btn {
-  float: left;
-  /* width: 30%; */
+  float: left; 
   text-align: center;
   border: 1px solid #2eff00;
-  padding: 15px 0;
+  padding: 15px 5px;
   border-radius: 10px;
-  height: 90px;
+  height: 100px;
   background: #fff;
   color: #000;
 }
