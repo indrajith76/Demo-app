@@ -158,12 +158,12 @@ marquee {
   margin-top: 5px;
   font-size: 12px;
   background: #ffffff67;
-  padding: 10px;
+  padding: 8px;
   color: white;
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 6px;
 }
 
 .custom-btn {
