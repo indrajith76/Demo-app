@@ -1,5 +1,11 @@
 body {
-  background: #f1f1f1;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(107, 255, 76, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   font-family: "Roboto", sans-serif;
   color: #333;
   margin: 0;
@@ -18,6 +24,10 @@ body {
   font-size: 24px;
 }
 
+.nav {
+  border-top: 1px solid #5fc947;
+}
+
 .nav p {
   font-family: "Roboto", sans-serif;
   font-style: inherit;
@@ -26,9 +36,34 @@ body {
   font-size: 12px;
 }
 
+.menu-btn-active {
+  color: #5fc947 !important;
+  font-weight: bold;
+  position: relative;
+  background: #fff;
+  margin: 0 !important;
+}
+
+.menu-btn-active::before {
+  content: "";
+  background-color: white;
+  border: 1px solid;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  box-shadow: 0px -2px 10px #009600;
+}
+
 .text-slider {
   text-align: center;
-  background: #ee99ff;
+  background: #a8ff95;
   width: 100%;
   margin: 10px auto;
   padding-top: 10px;
@@ -39,10 +74,15 @@ body {
   position: relative;
 }
 
+marquee {
+  color: #000;
+}
+
 .logo-banner-wrapper {
   position: relative;
   text-align: center;
   margin-bottom: 20px;
+  padding: 10px;
 }
 .logo-banner-wrapper img.logo {
   width: 100px;
@@ -70,6 +110,7 @@ body {
   justify-content: space-between;
   gap: 10px;
   margin: 20px 0;
+  padding: 0 10px;
 }
 .card {
   background: #fff;
@@ -82,12 +123,15 @@ body {
 }
 .card h2 {
   font-size: 16px;
-  color: #333;
   margin: 0;
+  color: #5fc947;
+  font-weight: 400;
+  font-family: fantasy;
+  letter-spacing: 2px;
 }
 .card p {
   font-size: 14px;
-  color: #666;
+  color: #00c210; 
   margin: 5px 0 0;
 }
 .card .icon {
@@ -98,16 +142,14 @@ body {
   height: 40px;
 }
 .card.balance {
-  background: url("https://antam.kanakdebnath.com/public/cardbg.png") no-repeat
-    center center;
+  background: url("../imges/cardbg.png") no-repeat center center;
   background-size: cover;
-  filter: hue-rotate(245deg);
+  border: 1px solid #00ff00;
 }
 .card.income {
-  background: url("https://antam.kanakdebnath.com/public/cardbg.png") no-repeat
-    center center;
+  background: url("../imges/cardbg.png") no-repeat center center;
   background-size: cover;
-  filter: hue-rotate(245deg);
+  border: 1px solid #00ff00;
 }
 
 .button-section {
@@ -120,7 +162,7 @@ body {
   color: white;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
@@ -128,16 +170,17 @@ body {
   float: left;
   /* width: 30%; */
   text-align: center;
-  border: 1px solid;
+  border: 1px solid #2eff00;
   padding: 15px 0;
   border-radius: 10px;
   height: 90px;
-  background: #643a69;
+  background: #fff;
+  color: #000;
 }
 
 #custom-btn5 {
   background-image: url("../imges/logo.png");
-  background-color: #f5e1fa;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
